@@ -11,4 +11,4 @@ UMKM        :   Caesar Helm
 <br>
 Lokasi      :   Jl. Rajawali
 <br>
-Deskripsi   :   Taham Pembuatan
+Deskripsi   :   Tahap Pembuatan
