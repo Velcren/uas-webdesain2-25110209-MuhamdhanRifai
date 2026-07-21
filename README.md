@@ -64,7 +64,7 @@ Project ini merupakan pembuatan website profil & katalog produk interaktif untuk
 
 ---
 
-## Cara Menjalankan Project
+## Cara Menjalankan Project dengan cara lain
 1. Unduh atau *clone* repositori ini.
 2. Pastikan file `index.html`, `style.css`, `script.js`, dan folder `bootstrap-4.5.3-dist` berada dalam satu direktori yang sama.
 3. Buka file `index.html` menggunakan *web browser* pilihan Anda (Google Chrome, Edge, Firefox, dll.).
