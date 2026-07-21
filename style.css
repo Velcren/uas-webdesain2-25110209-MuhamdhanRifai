@@ -1,30 +1,113 @@
-/* Custom Styles */
+:root {
+    --navy : #000000;
+    --gold : #f2a93b;
+}
 
-/* Hero Section */
+.navbar-brand-icon {color: var(--gold)}
+.navbar-link-page { position: relative;}
+.navbar-link-page::after {
+    content: '';
+    position: absolute; left: 8px; right: 8px; bottom: 0;
+    height: 2px; background: var(--gold);
+    transform: scaleX(0); transform-origin: left;
+    transition: transform .25s ease;
+}
+.navbar-link-page.active::after {transform: scaleX(1);}
+.navbar-link-page.active::after {transform: scaleX(1);}
+
 .hero-section {
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), 
-                url('https://images.unsplash.com/photo-1551650975-87deedd944c3?auto=format&fit=crop&q=80&w=1200') no-repeat center center/cover;
-    height: 70vh;
-    min-height: 400px;
+    background: linear-gradient(135deg, var(--navy)0%, #918b8b 100%);
+    padding: 100px 0 70px;
+}
+.page-view {display: none;}
+.page-view.active {display: block; animation: fadeUp .3s ease;}
+
+@keyframes fadeUp{
+    from {opacity: 0; transform: translateY(10px);}
+    to {opacity: 1; transform: translateY(0);}
 }
 
-/* Card Image Fit */
-.card-img-top {
-    height: 250px;
-    object-fit: cover;
+/* Styling Tambahan Halaman Kontak */
+.section-title {
+    color: var(--navy);
+    font-weight: 800;
 }
 
-/* Smooth Scrolling */
-html {
-    scroll-behavior: smooth;
+.modern-card {
+    border: none;
+    border-radius: 15px;
+    transition: transform .3s ease, box-shadow .3s ease;
+    background: #ffffff;
 }
 
-/* Card Hover Animation */
-.card {
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
+.modern-card:hover {
     transform: translateY(-5px);
-    box-shadow: 0 10px 20px rgba(0,0,0,0.15) !important;
+    box-shadow: 0 10px 20px rgba(0,0,0,.1) !important;
+}
+
+.icon-box {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--navy), #918b8b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    color: var(--gold);
+    font-size: 28px;
+}
+
+.contact-form {
+    border: none;
+    border-radius: 15px;
+}
+
+.social-btn {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--navy);
+    color: #ffffff;
+    font-size: 18px;
+    transition: .3s;
+    text-decoration: none !important;
+}
+
+.social-btn:hover {
+    background: var(--gold);
+    color: var(--navy);
+    transform: translateY(-3px);
+}
+
+iframe {
+    border-radius: 15px;
+}
+
+/* Styling Slider Background Hero (Global) */
+.hero-carousel {
+    position: relative;
+    min-height: 480px;
+}
+
+.hero-carousel .carousel-item {
+    min-height: 480px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    transition: transform 0.8s ease-in-out;
+}
+
+.hero-carousel .carousel-indicators li {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+}
+
+.hero-carousel .carousel-indicators li.active {
+    background-color: var(--gold);
 }
