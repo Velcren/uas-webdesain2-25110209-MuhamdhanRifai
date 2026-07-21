@@ -1,45 +1,36 @@
-document.addEventListener("DOMContentLoaded", function () {
-    
-    // 1. Logika Filter Produk
-    const filterButtons = document.querySelectorAll(".filter-btn");
-    const productItems = document.querySelectorAll(".product-item");
-
-    filterButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            // Ubah status active pada button
-            filterButtons.forEach(btn => btn.classList.remove("active"));
-            this.classList.add("active");
-
-            const filterValue = this.getAttribute("data-filter");
-
-            productItems.forEach(item => {
-                if (filterValue === "all" || item.getAttribute("data-category") === filterValue) {
-                    item.style.display = "block";
-                } else {
-                    item.style.display = "none";
-                }
-            });
-        });
+function pindahHalaman(namaHalaman) {
+    // Sembunyikna semua halaman
+    document.querySelectorAll('.page-view').forEach(function (el) {
+        el.classList.remove('active');
     });
 
-    // 2. Logika Tombol Beli (Simulasi WhatsApp / Checkout)
-    const buyButtons = document.querySelectorAll(".buy-btn");
+    const target = document.getElementById('page-' + namaHalaman);
+    if (target) target.classList.add('active');
 
-    buyButtons.forEach(button => {
-        button.addEventListener("click", function () {
-            const productName = this.getAttribute("data-name");
-            const productPrice = this.getAttribute("data-price");
-            
-            // Simulasi redirect ke WhatsApp toko
-            const nomorAdmin = "628123456789"; // Ganti dengan nomor WhatsApp aslimu
-            const pesan = `Halo HelmZone, saya tertarik untuk membeli produk *${productName}* seharga *${productPrice}*. Apakah stoknya masih tersedia?`;
-            
-            // Encode pesan agar format URL valid
-            const urlWhatsApp = `https://api.whatsapp.com/send?phone=${nomorAdmin}&text=${encodeURIComponent(pesan)}`;
-            
-            // Tampilkan alert konfirmasi sebelum diarahkan
-            alert(`Membuka WhatsApp untuk memesan: ${productName}`);
-            window.open(urlWhatsApp, '_blank');
-        });
+    document.querySelectorAll('.nav-link-page').forEach(function (link) {
+        const isActive = link.getAttribute('data-page') === namaHalaman;
+        link.classList.toggle('active', isActive);
+        link.classList.toggle('text-white', isActive);
+        link.classList.toggle('text-white-50', !isActive);
+    })
+
+    window.scrollTo({ top: 0, behavior: 'instant' });
+
+    $('#navbarLinks').collapse('hide');
+
+    if (namaHalaman === 'akademik') {
+        setTimeout(function () {
+            $('[data-spy="scroll"]').each(function () {
+                $(this).scrollspy('refresh');
+            });
+        }, 50);
+    }
+}
+
+// Pasang event listener ke semua element yang punya data-page
+document.querySelectorAll('[data-page]').forEach(function (el) {
+    el.addEventListener('click', function (e) {
+        e.preventDefault();
+        pindahHalaman(this.getAttribute('data-page'));
     });
 });
