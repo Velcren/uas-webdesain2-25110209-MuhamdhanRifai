@@ -1,21 +1,23 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Caesar Helm</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Caesar Helm Pekanbaru</title>
+    <!-- Bootstrap 4 CSS -->
     <link rel="stylesheet" href="bootstrap-4.5.3-dist/css/bootstrap.min.css">
-    <!-- Font Awesome untuk Ikon -->
+    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <!-- Bootstrap Icons -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-dark fixed-top" style="background-color: var(--navy);">
         <a class="navbar-brand font-weight-bold" href="#" data-page="home">
-            Toko Penjualan Helm - Caesar Helm Pekanbaru
+            <i class="fas fa-motorcycle text-warning mr-2"></i>Caesar Helm Pekanbaru
         </a>
         <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarLinks" aria-controls="navbarLinks" aria-expanded="false">
             <span class="navbar-toggler-icon"></span>
@@ -26,10 +28,10 @@
                     <a class="nav-link active nav-link-page text-white" href="#" data-page="home">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-page text-white-50" href="#" data-page="akademik">Akademik</a>
+                    <a class="nav-link nav-link-page text-white-50" href="#" data-page="about">About</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link nav-link-page text-white-50" href="#" data-page="dosen">Dosen</a>
+                    <a class="nav-link nav-link-page text-white-50" href="#" data-page="produk">Produk</a>
                 </li>
                 <li class="nav-item ml-lg-2">
                     <a class="nav-link btn btn-warning btn-sm text-dark font-weight-bold px-3" href="#" data-page="kontak">
@@ -40,179 +42,247 @@
         </div>
     </nav>
 
-    <!-- SLIDER BACKGROUND (BERADA DI ATAS SEMUA PAGE, BERGESER OTOMATIS) -->
+    <!-- HERO CAROUSEL -->
     <div style="padding-top: 56px;">
         <section id="heroCarousel" class="carousel slide hero-carousel" data-ride="carousel" data-interval="4000">
-            <!-- Indikator Slide -->
             <ol class="carousel-indicators">
                 <li data-target="#heroCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#heroCarousel" data-slide-to="1"></li>
                 <li data-target="#heroCarousel" data-slide-to="2"></li>
             </ol>
 
-            <!-- Gambar Background Carousel -->
             <div class="carousel-inner">
                 <!-- Slide 1 -->
-                <div class="carousel-item active" style="background-image: linear-gradient(rgba(19, 41, 75, 0.75), rgba(30, 63, 110, 0.75)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1600');">
+                <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=1600');">
                     <div class="container d-flex flex-column justify-content-center align-items-center h-100 text-white text-center py-5">
                         <span class="badge badge-warning text-dark mb-3 px-3 py-2" style="font-size: 12px; letter-spacing: .05em;">
                             Caesar Helm Pekanbaru
                         </span>
-                        <h1 class="display-4 font-weight-bold mb-3">
-                            Pusat Helm Berkualitas & Terlengkap
-                        </h1>
-                        <p class="lead text-white-50 mb-4">
-                            Menyediakan berbagai pilihan helm standar SNI, Full Face, Half Face, dan aksesoris berkendara untuk keamanan Anda.
-                        </p>
+                        <h1 class="display-4 font-weight-bold mb-3">Pusat Helm Berkualitas & Terlengkap</h1>
+                        <p class="lead text-white-50 mb-4">Menyediakan berbagai pilihan helm SNI, Full Face, Half Face, dan aksesoris terpercaya untuk keselamatan Anda.</p>
                         <div>
-                            <button class="btn btn-warning text-dark font-weight-bold px-4 mr-2" data-page="akademik">Lihat Produk</button>
+                            <button class="btn btn-warning text-dark font-weight-bold px-4 mr-2" data-page="produk">Lihat Produk</button>
                             <button class="btn btn-outline-light text-white font-weight-bold px-4" data-page="kontak">Hubungi Kami</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 2 -->
-                <div class="carousel-item" style="background-image: linear-gradient(rgba(19, 41, 75, 0.75), rgba(30, 63, 110, 0.75)), url('https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1600');">
+                <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=1600');">
                     <div class="container d-flex flex-column justify-content-center align-items-center h-100 text-white text-center py-5">
                         <span class="badge badge-warning text-dark mb-3 px-3 py-2" style="font-size: 12px; letter-spacing: .05em;">
                             Koleksi Terbaru
                         </span>
-                        <h1 class="display-4 font-weight-bold mb-3">
-                            Desain Modern & Proteksi Maksimal
-                        </h1>
-                        <p class="lead text-white-50 mb-4">
-                            Pilihan brand helm ternama dengan jaminan originalitas dan kenyamanan tinggi untuk perjalanan harian maupun touring.
-                        </p>
+                        <h1 class="display-4 font-weight-bold mb-3">Desain Modern & Proteksi Maksimal</h1>
+                        <p class="lead text-white-50 mb-4">Pilihan brand helm ternama dengan jaminan 100% original dan kenyamanan tinggi untuk harian maupun touring.</p>
                         <div>
-                            <button class="btn btn-warning text-dark font-weight-bold px-4 mr-2" data-page="akademik">Lihat Produk</button>
+                            <button class="btn btn-warning text-dark font-weight-bold px-4 mr-2" data-page="produk">Lihat Produk</button>
                             <button class="btn btn-outline-light text-white font-weight-bold px-4" data-page="kontak">Hubungi Kami</button>
                         </div>
                     </div>
                 </div>
 
                 <!-- Slide 3 -->
-                <div class="carousel-item" style="background-image: linear-gradient(rgba(19, 41, 75, 0.75), rgba(30, 63, 110, 0.75)), url('https://images.unsplash.com/photo-1558980664-3a031cf67ea8?q=80&w=1600');">
+                <div class="carousel-item" style="background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('https://images.unsplash.com/photo-1558980664-3a031cf67ea8?q=80&w=1600');">
                     <div class="container d-flex flex-column justify-content-center align-items-center h-100 text-white text-center py-5">
                         <span class="badge badge-warning text-dark mb-3 px-3 py-2" style="font-size: 12px; letter-spacing: .05em;">
                             Layanan Terbaik
                         </span>
-                        <h1 class="display-4 font-weight-bold mb-3">
-                            Kunjungi Toko Caesar Helm Rajawali
-                        </h1>
-                        <p class="lead text-white-50 mb-4">
-                            Siap melayani konsultasi pemilihan ukuran dan tipe helm yang pas sesuai bentuk kepala dan kebutuhan Anda.
-                        </p>
+                        <h1 class="display-4 font-weight-bold mb-3">Toko Caesar Helm Rajawali</h1>
+                        <p class="lead text-white-50 mb-4">Siap melayani konsultasi ukuran dan tipe helm yang pas sesuai bentuk kepala dan kebutuhan Anda.</p>
                         <div>
-                            <button class="btn btn-warning text-dark font-weight-bold px-4 mr-2" data-page="akademik">Lihat Produk</button>
+                            <button class="btn btn-warning text-dark font-weight-bold px-4 mr-2" data-page="produk">Lihat Produk</button>
                             <button class="btn btn-outline-light text-white font-weight-bold px-4" data-page="kontak">Hubungi Kami</button>
                         </div>
                     </div>
                 </div>
             </div>
 
-            <!-- Tombol Navigasi Kiri & Kanan -->
             <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="sr-only">Previous</span>
             </a>
             <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="sr-only">Next</span>
             </a>
         </section>
     </div>
 
     <!-- PAGE HOME -->
     <div id="page-home" class="page-view active">
-        <div class="container text-center py-5">
-            <h1 class="display-4 font-weight-bold">Caesar Helm Pekanbaru</h1>
-        </div>
+        <section class="py-5 bg-white">
+            <div class="container text-center">
+                <h2 class="section-title mb-2">Mengapa Memilih Caesar Helm?</h2>
+                <p class="text-muted mb-5">Komitmen kami untuk memberikan perlindungan dan gaya terbaik saat berkendara</p>
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card modern-card p-4 h-100 shadow-sm border-0">
+                            <div class="icon-box mb-3"><i class="bi bi-shield-check"></i></div>
+                            <h5 class="font-weight-bold">100% Standar SNI</h5>
+                            <p class="text-muted small">Seluruh helm yang kami jual memenuhi standar keselamatan resmi teruji.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card modern-card p-4 h-100 shadow-sm border-0">
+                            <div class="icon-box mb-3"><i class="bi bi-tags-fill"></i></div>
+                            <h5 class="font-weight-bold">Harga Bersaing</h5>
+                            <p class="text-muted small">Menyediakan berbagai varian helm mulai dari tipe ekonomis hingga premium.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-4">
+                        <div class="card modern-card p-4 h-100 shadow-sm border-0">
+                            <div class="icon-box mb-3"><i class="bi bi-person-heart"></i></div>
+                            <h5 class="font-weight-bold">Layanan Ramah</h5>
+                            <p class="text-muted small">Tim kami siap membantu merekomendasikan helm paling pas untuk Anda.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- PAGE AKADEMIK -->
-    <div id="page-akademik" class="page-view">
+    <!-- PAGE ABOUT -->
+    <div id="page-about" class="page-view">
         <div class="text-white py-4" style="background-color: var(--navy);">
             <div class="container">
-                <span class="badge badge-warning text-dark mb-2">Program Studi</span>
-                <h1 class="h3 font-weight-bold mb-1">D3 Manajemen Informatika</h1>
-                <p class="mb-0 text-white-50">Informasi lengkap seputar profil, kurikulum, dan mata kuliah</p>
+                <span class="badge badge-warning text-dark mb-2">Tentang Kami</span>
+                <h1 class="h3 font-weight-bold mb-1">Profil Caesar Helm Pekanbaru</h1>
+                <p class="mb-0 text-white-50">Pusat perlengkapan keselamatan berkendara terpercaya di Pekanbaru</p>
             </div>
         </div>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6 mb-4 mb-lg-0">
+                        <img src="https://images.unsplash.com/photo-1558980664-3a031cf67ea8?q=80&w=800" class="img-fluid rounded shadow" alt="Toko Caesar Helm">
+                    </div>
+                    <div class="col-lg-6">
+                        <h2 class="section-title mb-3">Selamat Datang di Caesar Helm</h2>
+                        <p class="text-muted"><strong>Caesar Helm Rajawali Pekanbaru</strong> adalah toko retail penyedia helm dan aksesoris pelindung pengendara motor yang mengutamakan mutu, originalitas, dan keselamatan.</p>
+                        <p class="text-muted">Kami menyediakan berbagai tipe produk mulai dari helm *Full Face*, *Half Face*, helm retro/classic, hingga suku cadang seperti kaca visor dan busa helm pengganti.</p>
+                        
+                        <div class="mt-4">
+                            <h5 class="font-weight-bold text-dark"><i class="bi bi-check-circle-fill text-warning mr-2"></i>Visi Kami</h5>
+                            <p class="text-muted small">Menjadi pelopor kedisiplinan keselamatan berkendara di Pekanbaru dengan menyediakan helm berkualitas tinggi.</p>
+                            
+                            <h5 class="font-weight-bold text-dark"><i class="bi bi-check-circle-fill text-warning mr-2"></i>Misi Kami</h5>
+                            <p class="text-muted small">Memberikan edukasi pemilihan helm yang tepat serta menghadirkan pilihan merek ternama dengan harga terjangkau.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
-    <!-- PAGE DOSEN -->
-    <div id="page-dosen" class="page-view">
+    <!-- PAGE PRODUK -->
+    <div id="page-produk" class="page-view">
         <div class="text-white py-4" style="background-color: var(--navy);">
             <div class="container">
-                <span class="badge badge-warning text-dark mb-2">Tenaga Pengajar</span>
-                <h1 class="h3 font-weight-bold mb-1">Dosen Program Studi</h1>
-                <p class="mb-0 text-white-50">Tim pengajar berpengalaman di bidang akademik dan industri TI</p>
+                <span class="badge badge-warning text-dark mb-2">Katalog</span>
+                <h1 class="h3 font-weight-bold mb-1">Produk Caesar Helm</h1>
+                <p class="mb-0 text-white-50">Jelajahi koleksi helm dan aksesoris pilihan terbaik kami</p>
             </div>
         </div>
+
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="row">
+                    <!-- Produk 1 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1558981806-ec527fa84c39?q=80&w=600" class="card-img-top product-img" alt="Helm Full Face">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge badge-warning text-dark w-25 mb-2">Full Face</span>
+                                <h5 class="card-title font-weight-bold mb-1">Helm Sport Full Face</h5>
+                                <p class="text-muted small flex-grow-1">Helm aerodinamis proteksi maksimal, cocok untuk touring dan kecepatan tinggi.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="h6 font-weight-bold text-warning mb-0">Rp 450.000</span>
+                                    <button class="btn btn-sm btn-dark" data-page="kontak">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 2 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1542282088-72c9c27ed0cd?q=80&w=600" class="card-img-top product-img" alt="Helm Half Face">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge badge-info w-25 mb-2">Half Face</span>
+                                <h5 class="card-title font-weight-bold mb-1">Helm Urban Half Face</h5>
+                                <p class="text-muted small flex-grow-1">Desain praktis dan nyaman dengan ventilasi udara sejuk untuk harian.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="h6 font-weight-bold text-warning mb-0">Rp 280.000</span>
+                                    <button class="btn btn-sm btn-dark" data-page="kontak">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Produk 3 -->
+                    <div class="col-lg-4 col-md-6 mb-4">
+                        <div class="card product-card h-100 border-0 shadow-sm">
+                            <img src="https://images.unsplash.com/photo-1558980664-3a031cf67ea8?q=80&w=600" class="card-img-top product-img" alt="Helm Retro">
+                            <div class="card-body d-flex flex-column">
+                                <span class="badge badge-secondary w-25 mb-2">Retro</span>
+                                <h5 class="card-title font-weight-bold mb-1">Helm Classic Vintage</h5>
+                                <p class="text-muted small flex-grow-1">Gaya bergaya klasik cocok untuk motor vespa atau custom.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <span class="h6 font-weight-bold text-warning mb-0">Rp 320.000</span>
+                                    <button class="btn btn-sm btn-dark" data-page="kontak">Pesan</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
     </div>
 
     <!-- PAGE KONTAK -->
     <div id="page-kontak" class="page-view">
-        <!-- Header Halaman -->
         <div class="text-white py-4" style="background-color: var(--navy);">
             <div class="container">
                 <span class="badge badge-warning text-dark mb-2">Hubungi Kami</span>
                 <h1 class="h3 font-weight-bold mb-1">Kontak Caesar Helm Rajawali</h1>
-                <p class="mb-0 text-white-50">Sampaikan pertanyaan atau masukan Anda melalui informasi dan formulir di bawah ini.</p>
+                <p class="mb-0 text-white-50">Sampaikan pertanyaan atau order produk Anda di bawah ini.</p>
             </div>
         </div>
 
-        <!-- Section Info Kontak -->
         <section class="py-5 bg-light">
             <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="section-title">Informasi Kontak</h2>
-                    <p class="text-muted">Hubungi kami melalui informasi berikut</p>
-                </div>
                 <div class="row">
-                    <!-- Email -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card modern-card shadow-sm h-100">
                             <div class="card-body text-center p-4">
-                                <div class="icon-box mb-4">
-                                    <i class="bi bi-envelope-fill"></i>
-                                </div>
+                                <div class="icon-box mb-4"><i class="bi bi-envelope-fill"></i></div>
                                 <h5 class="font-weight-bold">Email</h5>
                                 <p class="text-muted mt-3 mb-0">caesarhelm@gmail.com</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Telephone -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card modern-card shadow-sm h-100">
                             <div class="card-body text-center p-4">
-                                <div class="icon-box mb-4">
-                                    <i class="bi bi-telephone-fill"></i>
-                                </div>
+                                <div class="icon-box mb-4"><i class="bi bi-telephone-fill"></i></div>
                                 <h5 class="font-weight-bold">Telephone</h5>
                                 <p class="text-muted mt-3 mb-0">+62 812 3456 7890</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Alamat -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card modern-card shadow-sm h-100">
                             <div class="card-body text-center p-4">
-                                <div class="icon-box mb-4">
-                                    <i class="bi bi-geo-alt-fill"></i>
-                                </div>
+                                <div class="icon-box mb-4"><i class="bi bi-geo-alt-fill"></i></div>
                                 <h5 class="font-weight-bold">Alamat</h5>
                                 <p class="text-muted mt-3 mb-0">Jl. Rajawali, Sukajadi, Pekanbaru</p>
                             </div>
                         </div>
                     </div>
-                    <!-- Jam Operasional -->
                     <div class="col-lg-3 col-md-6 mb-4">
                         <div class="card modern-card shadow-sm h-100">
                             <div class="card-body text-center p-4">
-                                <div class="icon-box mb-4">
-                                    <i class="bi bi-clock-history"></i>
-                                </div>
+                                <div class="icon-box mb-4"><i class="bi bi-clock-history"></i></div>
                                 <h5 class="font-weight-bold">Layanan</h5>
                                 <p class="text-muted mt-3 mb-0">Setiap Hari (08:00 - 21:00)</p>
                             </div>
@@ -222,11 +292,9 @@
             </div>
         </section>
 
-        <!-- Section Form & Peta -->
         <section class="py-5 bg-white">
             <div class="container">
                 <div class="row align-items-center">
-                    <!-- Form -->
                     <div class="col-lg-6 mb-4 mb-lg-0">
                         <div class="card contact-form shadow-lg">
                             <div class="card-body p-4 p-md-5">
@@ -237,12 +305,12 @@
                                         <input type="text" class="form-control" placeholder="Masukkan nama Anda">
                                     </div>
                                     <div class="form-group mb-3">
-                                        <label class="font-weight-bold">Email</label>
-                                        <input type="email" class="form-control" placeholder="Masukkan email Anda">
+                                        <label class="font-weight-bold">Email / WhatsApp</label>
+                                        <input type="text" class="form-control" placeholder="Masukkan Email atau No. WA">
                                     </div>
                                     <div class="form-group mb-4">
-                                        <label class="font-weight-bold">Pesan</label>
-                                        <textarea rows="4" class="form-control" placeholder="Tulis pesan Anda"></textarea>
+                                        <label class="font-weight-bold">Pesan / Pertanyaan Produk</label>
+                                        <textarea rows="4" class="form-control" placeholder="Tuliskan produk yang ingin ditanyakan"></textarea>
                                     </div>
                                     <button type="submit" class="btn btn-warning btn-block font-weight-bold py-2">
                                         <i class="bi bi-send-fill mr-1"></i> Kirim Pesan
@@ -252,15 +320,13 @@
                         </div>
                     </div>
 
-                    <!-- Social Media & Lokasi -->
                     <div class="col-lg-6">
                         <h2 class="section-title mb-3">Media Sosial</h2>
-                        <p class="text-muted">Ikuti media sosial Caesar Helm untuk informasi Produk baru.</p>
+                        <p class="text-muted">Ikuti media sosial Caesar Helm untuk pembaruan stok terbaru.</p>
                         <div class="d-flex mb-4">
                             <a href="#" class="social-btn mr-2"><i class="bi bi-instagram"></i></a>
                             <a href="#" class="social-btn mr-2"><i class="bi bi-facebook"></i></a>
                             <a href="#" class="social-btn mr-2"><i class="bi bi-whatsapp"></i></a>
-                            <a href="#" class="social-btn"><i class="bi bi-twitter-x"></i></a>
                         </div>
 
                         <h2 class="section-title mb-3">Lokasi Toko Caesar Helm Rajawali</h2>
@@ -269,55 +335,15 @@
                 </div>
             </div>
         </section>
-
-        <!-- Section FAQ -->
-        <section class="py-5 bg-light">
-            <div class="container">
-                <div class="text-center mb-5">
-                    <h2 class="section-title">FAQ</h2>
-                    <p class="text-muted">Pertanyaan yang sering ditanyakan seputar produk dan layanan kami</p>
-                </div>
-                <div class="accordion shadow-sm rounded overflow-hidden" id="faqAccordion">
-                    <div class="card border-0">
-                        <div class="card-header bg-white" id="headingOne">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left text-dark font-weight-bold" type="button" data-toggle="collapse" data-target="#faq1" aria-expanded="true" aria-controls="faq1">
-                                    Helm Jenis apa yang Sesuai untuk Saya?
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="faq1" class="collapse show" aria-labelledby="headingOne" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Kami Akan Merekomendasikan Helm Sesuai dengan Kebutuhan Anda, Silahkan Hubungi Kami untuk Konsultasi.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="card border-0">
-                        <div class="card-header bg-white" id="headingTwo">
-                            <h2 class="mb-0">
-                                <button class="btn btn-link btn-block text-left text-dark font-weight-bold collapsed" type="button" data-toggle="collapse" data-target="#faq2" aria-expanded="false" aria-controls="faq2">
-                                    Bagaimana cara memesan helm?
-                                </button>
-                            </h2>
-                        </div>
-                        <div id="faq2" class="collapse" aria-labelledby="headingTwo" data-parent="#faqAccordion">
-                            <div class="card-body">
-                                Anda dapat memesan helm melalui media sosial kami atau mengunjungi toko kami secara langsung.
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
     </div>
 
     <!-- FOOTER -->
     <footer class="text-center py-4 text-white" style="background-color: var(--navy);">
-        <p class="mb-1">&copy; 2026 Caesar Helm &middot; D3 Manajemen Informatika</p>
+        <p class="mb-1">&copy; 2026 Caesar Helm Pekanbaru &middot; D3 Manajemen Informatika</p>
         <p class="mb-0 small" style="opacity: .5;">Web Demo &mdash; Mata Kuliah Web Desain 2</p>
     </footer>
 
-    <!-- Bootstrap JS & jQuery untuk Bootstrap 4 -->
+    <!-- Bootstrap JS & jQuery -->
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"></script>
     <script src="script.js"></script>
